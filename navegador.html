@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Definição do tipo de documento e idioma -->
+    <meta charset="UTF-8">
+    <!-- Configuração da viewport para dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página exibido na aba do navegador -->
+    <title>Google</title>
+</head>
+<body>
+    <!-- Início da seção principal -->
+    <section>
+        <!-- Cabeçalho da página -->
+        <header class="center">
+            <!-- Parte esquerda do cabeçalho -->
+            <div>
+                <label for=""><a href="">Sobre</a></label>
+                <label for=""><a href="">Loja</a></label>
+            </div>
+            <!-- Parte direita do cabeçalho -->
+            <div>
+                <label for=""><a href="">Gmail</a></label>
+                <label for=""><a href="">Imagens</a></label>
+            </div>
+        </header>
+        
+        <!-- Início da seção de conteúdo -->
+        <section class="conteiner"> 
+            <section>
+                <!-- Primeira seção principal -->
+                <div class="main">
+                    <img src="https://logodownload.org/wp-content/uploads/2014/09/google-logo-3.png" alt="" id="logo-do-google">
+                </div>
+                <!-- Segunda seção principal -->
+                <div class="main">
+                    <input type="text" id="">
+                </div>
+                <br>
+                <!-- Terceira seção principal -->
+                <div class="main">
+                    <button>Pesquisa no Google</button>
+                    <label for="">⠀</label>
+                    <button>Estou com Sorte</button>
+                </div>
+            </section>
+        </section>
+        
+        <!-- Rodapé da página -->
+        <footer class="center">
+            <!-- Parte esquerda do rodapé -->
+            <div class="left">
+                <label for=""><a href="">Anúncio</a></label>
+                <label for=""><a href="">Negócios</a></label>
+            </div>
+            <!-- Parte direita do rodapé -->
+            <div class="right">
+                <label for=""><a href="">Privacidade</a></label>
+                <label for=""><a href="">Termos</a></label>
+                <label for=""><a href="">Configurações</a></label>
+            </div>
+        </footer>
+    </section>
+</body>
+<style>
+    /* Estilização para elementos com a classe 'main' */
+    .main {
+        display: flex; /* Exibir elementos em um flex container */
+        flex-direction: row; /* Organizar itens em uma linha */
+        justify-content: center; /* Centralizar horizontalmente */
+        align-items: center; /* Centralizar verticalmente */
+    }
+    
+    /* Estilização para o corpo da página */
+    body {
+        font-family: sans-serif; /* Definir a família de fontes para o corpo do documento */
+        margin: 0; /* Remover margens */
+        padding: 0; /* Remover preenchimentos */
+        padding-top: 20px; /* Adicionar espaço superior */
+    }
+    
+    /* Estilização para a seção 'conteiner' */
+    .conteiner {
+        height: 92vh; /* Altura ocupando 92% da viewport */
+        display: flex; /* Exibir elementos em um flex container */
+        flex-direction: row; /* Organizar itens em uma linha */
+        justify-content: center; /* Centralizar horizontalmente */
+        align-items: center; /* Centralizar verticalmente */
+    }
+    
+    /* Estilização para a imagem do logo do Google */
+    #logo-do-google {
+        cursor: auto; /* Definir o cursor como padrão */
+        width: 350px; /* Largura da imagem */
+        padding: 20px; /* Adicionar espaço interno à imagem */
+    }
+    
+    /* Estilização para elementos do tipo input e input em foco */
+    input,
+    input:focus {
+        color: grey; /* Cor do texto */
+        font-size: medium; /* Tamanho da fonte */
+        width: 582px; /* Largura do input */
+        height: 46px; /* Altura do input */
+        border-radius: 100px; /* Arredondamento das bordas */
+        border: solid 1px; /* Borda sólida de 1px */
+        justify-content: center; /* Centralizar horizontalmente */
+        align-items: center; /* Centralizar verticalmente */
+        display: flex; /* Exibir elementos em um flex container */
+    }
+    
+    /* Estilização para botões */
+    button {
+        cursor: pointer; /* Definir o cursor como ponteiro */
+        width: 150px; /* Largura do botão */
+        height: 40px; /* Altura do botão */
+        border-radius: 3px; /* Arredondamento das bordas */
+        background-color: whitesmoke; /* Cor de fundo */
+        color: grey; /* Cor do texto */
+        border: 0; /* Remover borda */
+    }
+    
+    /* Estilização para rótulos no rodapé */
+    footer label {
+        padding: 10px; /* Adicionar espaçamento interno */
+    }
+    
+    /* Estilização para rótulos no cabeçalho */
+    header label {
+        padding-left: 10px; /* Adicionar espaçamento interno à esquerda */
+        padding-right: 10px; /* Adicionar espaçamento interno à direita */
+        padding-top: 0px; /* Remover espaçamento interno superior */
+    }
+    
+    /* Estilização para cabeçalho e rodapé */
+    header,
+    footer {
+        position: absolute; /* Posição absoluta */
+        width: 100%; /* Largura ocupando 100% da largura do pai */
+        height: 7vh; /* Altura de 7% da viewport */
+        color: grey; /* Cor do texto */
+    }
+    
+    /* Estilização para o rodapé */
+    footer {
+        background: whitesmoke; /* Cor de fundo */
+        bottom: 0; /* Fixar no rodapé */
+        display: inline-block; /* Exibir como bloco inline */
+        flex-direction: row; /* Organizar itens em uma linha */
+        align-items: center; /* Centralizar verticalmente */
+    }
+    
+    /* Estilização para o cabeçalho */
+    header {
+        height: 5vh; /* Altura de 5% da viewport */
+    }
+    
+    /* Estilização para links */
+    a {
+        text-decoration: none; /* Remover decoração de texto */
+        color: grey; /* Cor do texto */
+    }
+    
+    /* Estilização para links ao passar o mouse por cima */
+    a:hover {
+        text-decoration: underline; /* Sublinhar o texto ao passar o mouse */
+    }
+    
+    /* Estilização para botões ao passar o mouse por cima */
+    button:hover {
+        border-color: grey; /* Mudar a cor da borda ao passar o mouse */
+        border: solid 1px; /* Borda sólida de 1px */
+    }
+    
+    /* Estilização para input ao passar o mouse por cima ou em foco */
+    input:hover,
+    input:focus {
+        background-color: whitesmoke; /* Mudar a cor de fundo ao passar o mouse ou em foco */
+    }
+    
+    /* Estilização para elementos com a classe 'center' */
+    .center {
+        display: flex; /* Exibir elementos em um flex container */
+        justify-content: space-between; /* Distribuir espaço entre os elementos */
+        align-items: center; /* Centralizar verticalmente */
+    }
+    </style>
+    </html>
