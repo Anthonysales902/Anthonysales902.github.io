@@ -8,33 +8,24 @@
 </head>
 <body>
     <div class="container">
-        <!-- Div que contém o título do formulário -->
         <div><h2>Survey Form</h2></div>
-        <!-- Div que contém o formulário -->
         <div class="box">
-            <!-- Div para a seção de introdução -->
             <div>
-                <!-- Parágrafo de introdução -->
                 <p>Let us know how can improve freeCodeCamp</p> <br>
-                <!-- Lista não ordenada para os campos do formulário -->
                 <ul>
                     <li>
-                        <!-- Rótulo e campo de entrada para o nome -->
                         <label for="name">* Name:</label>
                         <input class="input-text" type="text" id="name" placeholder="Enter your name">
                     </li>
                     <li>
-                        <!-- Rótulo e campo de entrada para o email -->
                         <label for="email">* Email:</label>
                         <input class="input-text" type="text" id="email" placeholder="Enter your email">
                     </li>
                     <li>
-                        <!-- Rótulo e campo de entrada para a idade -->
                         <label for="age">* Age:</label>
                         <input class="input-text" type="number" id="age" placeholder="Enter your age" min="0">
                     </li>
                     <li>
-                        <!-- Rótulo e seleção para a função atual -->
                         <label for="role">* Which option best describes your current role?</label>
                         <select id="role">
                             <option value="student">Student</option>
@@ -43,7 +34,6 @@
                         </select>
                     </li>
                     <li>
-                        <!-- Rótulo e opções de escolha para recomendação -->
                         <label for="recommend">* How likely are you to recommend freeCodeCamp to a friend?</label>
                         <div id="recommend">
                             <input type="radio" name="recommend" id="definitely"> Definitely<br>
@@ -52,7 +42,6 @@
                         </div>
                     </li>
                     <li>
-                        <!-- Rótulo e seleção para o que mais gosta no freeCodeCamp -->
                         <label for="like">* What do you like most about freeCodeCamp?</label>
                         <select id="like">
                             <option value="option1">1</option>
@@ -61,7 +50,6 @@
                         </select>
                     </li>
                     <li>
-                        <!-- Rótulo e opções de escolha múltipla para melhorias futuras -->
                         <label>* Things that should be improved in the future (Check all that apply):</label>
                         <div>
                             <input type="checkbox" id="front-end"> Front-end Projects<br>
@@ -76,92 +64,70 @@
     
 </body>
 <style>
-
-    /* Define estilos para todos os elementos, incluindo margens, preenchimentos e caixas de dimensionamento de borda */
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
-    
-    /* Define o tamanho da fonte do corpo do documento */
     body {
         font-size: 20px;
     }
-    
-    /* Estilos para a classe "container" que abriga o conteúdo principal */
     .container {
-        width: 100vw; /* Largura igual à largura da janela de visualização */
-        height: 100vh; /* Altura igual à altura da janela de visualização */
-        background: #a8d7d0; /* Cor de fundo */
-        display: flex; /* Exibe os elementos filhos em um layout flex */
-        flex-direction: column; /* Organiza os elementos filhos em coluna */
-        align-items: center; /* Alinha os elementos horizontalmente ao centro */
+        width: 100vw;
+        height: 100vh;
+        background: #a8d7d0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-    
-    /* Estilos para a classe "box" que envolve um bloco de conteúdo */
     .box {
-        display: flex; /* Exibe os elementos filhos em um layout flex */
-        flex-direction: column; /* Organiza os elementos filhos em coluna */
-        align-items: center; /* Alinha os elementos horizontalmente ao centro */
-        text-align: center; /* Alinha o texto ao centro */
-        width: 95vw; /* Largura igual a 95% da largura da janela de visualização */
-        height: 95vh; /* Altura igual a 95% da altura da janela de visualização */
-        background: #fafafa; /* Cor de fundo */
-        padding: 20px; /* Espaçamento interno */
-        border-radius: 10px; /* Borda arredondada */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 95vw;
+        height: 95vh;
+        background: #fafafa;
+        padding: 20px;
+        border-radius: 10px;
     }
-    
-    /* Remove a marcação de lista padrão, margens e preenchimentos */
     ul {
         list-style: none;
         padding: 0;
         margin: 0;
     }
-    
-    /* Estilos para rótulos de entrada de dados */
     label {
-        padding-right: 15px; /* Espaçamento à direita */
-        width: 250px; /* Largura fixa */
-        display: inline-block; /* Exibe o elemento como bloco, mas permite que outros elementos fiquem ao lado */
-        text-align: right; /* Alinha o texto à direita */
+        padding-right: 15px;
+        width: 250px;
+        display: inline-block;
+        text-align: right;
     }
-    
-    /* Estilos para itens de lista */
     li {
-        margin-bottom: 15px; /* Margem inferior */
-        display: flex; /* Exibe os elementos filhos em um layout flex */
-        align-items: center; /* Alinha os elementos verticalmente ao centro */
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
     }
-    
-    /* Estilos para campos de entrada de texto */
     .input-text {
-        width: 300px; /* Largura fixa */
-        height: 32px; /* Altura fixa */
-        font-size: 15px; /* Tamanho da fonte */
-        border: 1px solid #838383; /* Borda */
-        padding: 5px; /* Espaçamento interno */
+        width: 300px;
+        height: 32px;
+        font-size: 15px;
+        border: 1px solid #838383;
+        padding: 5px;
     }
-    
-    /* Estilos para menus suspensos */
     select {
-        width: 130px; /* Largura fixa */
-        height: 32px; /* Altura fixa */
-        background-color: #f0f0f0; /* Cor de fundo */
-        font-size: 15px; /* Tamanho da fonte */
-        font-weight: bold; /* Peso da fonte */
-        border: 1px solid #838383; /* Borda */
+        width: 130px;
+        height: 32px;
+        background-color: #f0f0f0;
+        font-size: 15px;
+        font-weight: bold;
+        border: 1px solid #838383;
     }
-    
-    /* Estilos para elementos div */
     div {
-        display: inline-block; /* Exibe o elemento como bloco, mas permite que outros elementos fiquem ao lado */
-        flex-direction: column; /* Organiza os elementos filhos em coluna */
-        align-items: start; /* Alinha os elementos horizontalmente à esquerda */
-        gap: 5px; /* Espaçamento entre elementos filhos */
-        text-align: left; /* Alinha o texto à esquerda */
+        display: inline-block;
+        flex-direction: column;
+        align-items: start;
+        gap: 5px;
+        text-align: left;
     }
-    
-    </style>
-    
+</style>
 </html>
