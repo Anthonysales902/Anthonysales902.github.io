@@ -1,188 +1,167 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-    <!-- Definição do tipo de documento e idioma -->
     <meta charset="UTF-8">
-    <!-- Configuração da viewport para dispositivos móveis -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Título da página exibido na aba do navegador -->
-    <title>Google</title>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Início da seção principal -->
-    <section>
-        <!-- Cabeçalho da página -->
-        <header class="center">
-            <!-- Parte esquerda do cabeçalho -->
+    <div class="container">
+        <!-- Div que contém o título do formulário -->
+        <div><h2>Survey Form</h2></div>
+        <!-- Div que contém o formulário -->
+        <div class="box">
+            <!-- Div para a seção de introdução -->
             <div>
-                <label for=""><a href="">Sobre</a></label>
-                <label for=""><a href="">Loja</a></label>
+                <!-- Parágrafo de introdução -->
+                <p>Let us know how can improve freeCodeCamp</p> <br>
+                <!-- Lista não ordenada para os campos do formulário -->
+                <ul>
+                    <li>
+                        <!-- Rótulo e campo de entrada para o nome -->
+                        <label for="name">* Name:</label>
+                        <input class="input-text" type="text" id="name" placeholder="Enter your name">
+                    </li>
+                    <li>
+                        <!-- Rótulo e campo de entrada para o email -->
+                        <label for="email">* Email:</label>
+                        <input class="input-text" type="text" id="email" placeholder="Enter your email">
+                    </li>
+                    <li>
+                        <!-- Rótulo e campo de entrada para a idade -->
+                        <label for="age">* Age:</label>
+                        <input class="input-text" type="number" id="age" placeholder="Enter your age" min="0">
+                    </li>
+                    <li>
+                        <!-- Rótulo e seleção para a função atual -->
+                        <label for="role">* Which option best describes your current role?</label>
+                        <select id="role">
+                            <option value="student">Student</option>
+                            <option value="professional">Professional</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </li>
+                    <li>
+                        <!-- Rótulo e opções de escolha para recomendação -->
+                        <label for="recommend">* How likely are you to recommend freeCodeCamp to a friend?</label>
+                        <div id="recommend">
+                            <input type="radio" name="recommend" id="definitely"> Definitely<br>
+                            <input type="radio" name="recommend" id="maybe"> Maybe<br>
+                            <input type="radio" name="recommend" id="not-sure"> Not sure
+                        </div>
+                    </li>
+                    <li>
+                        <!-- Rótulo e seleção para o que mais gosta no freeCodeCamp -->
+                        <label for="like">* What do you like most about freeCodeCamp?</label>
+                        <select id="like">
+                            <option value="option1">1</option>
+                            <option value="option2">2</option>
+                            <option value="option3">3</option>
+                        </select>
+                    </li>
+                    <li>
+                        <!-- Rótulo e opções de escolha múltipla para melhorias futuras -->
+                        <label>* Things that should be improved in the future (Check all that apply):</label>
+                        <div>
+                            <input type="checkbox" id="front-end"> Front-end Projects<br>
+                            <input type="checkbox" id="back-end"> Back-end Projects<br>
+                            <input type="checkbox" id="data-viz"> Data Visualization
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <!-- Parte direita do cabeçalho -->
-            <div>
-                <label for=""><a href="">Gmail</a></label>
-                <label for=""><a href="">Imagens</a></label>
-            </div>
-        </header>
-        
-        <!-- Início da seção de conteúdo -->
-        <section class="conteiner"> 
-            <section>
-                <!-- Primeira seção principal -->
-                <div class="main">
-                    <img src="https://logodownload.org/wp-content/uploads/2014/09/google-logo-3.png" alt="" id="logo-do-google">
-                </div>
-                <!-- Segunda seção principal -->
-                <div class="main">
-                    <input type="text" id="">
-                </div>
-                <br>
-                <!-- Terceira seção principal -->
-                <div class="main">
-                    <button>Pesquisa no Google</button>
-                    <label for="">⠀</label>
-                    <button>Estou com Sorte</button>
-                </div>
-            </section>
-        </section>
-        
-        <!-- Rodapé da página -->
-        <footer class="center">
-            <!-- Parte esquerda do rodapé -->
-            <div class="left">
-                <label for=""><a href="">Anúncio</a></label>
-                <label for=""><a href="">Negócios</a></label>
-            </div>
-            <!-- Parte direita do rodapé -->
-            <div class="right">
-                <label for=""><a href="">Privacidade</a></label>
-                <label for=""><a href="">Termos</a></label>
-                <label for=""><a href="">Configurações</a></label>
-            </div>
-        </footer>
-    </section>
+        </div>
+    </div>
+    
 </body>
 <style>
-    /* Estilização para elementos com a classe 'main' */
-    .main {
-        display: flex; /* Exibir elementos em um flex container */
-        flex-direction: row; /* Organizar itens em uma linha */
-        justify-content: center; /* Centralizar horizontalmente */
-        align-items: center; /* Centralizar verticalmente */
+
+    /* Define estilos para todos os elementos, incluindo margens, preenchimentos e caixas de dimensionamento de borda */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
     
-    /* Estilização para o corpo da página */
+    /* Define o tamanho da fonte do corpo do documento */
     body {
-        font-family: sans-serif; /* Definir a família de fontes para o corpo do documento */
-        margin: 0; /* Remover margens */
-        padding: 0; /* Remover preenchimentos */
-        padding-top: 20px; /* Adicionar espaço superior */
+        font-size: 20px;
     }
     
-    /* Estilização para a seção 'conteiner' */
-    .conteiner {
-        height: 92vh; /* Altura ocupando 92% da viewport */
-        display: flex; /* Exibir elementos em um flex container */
-        flex-direction: row; /* Organizar itens em uma linha */
-        justify-content: center; /* Centralizar horizontalmente */
-        align-items: center; /* Centralizar verticalmente */
+    /* Estilos para a classe "container" que abriga o conteúdo principal */
+    .container {
+        width: 100vw; /* Largura igual à largura da janela de visualização */
+        height: 100vh; /* Altura igual à altura da janela de visualização */
+        background: #a8d7d0; /* Cor de fundo */
+        display: flex; /* Exibe os elementos filhos em um layout flex */
+        flex-direction: column; /* Organiza os elementos filhos em coluna */
+        align-items: center; /* Alinha os elementos horizontalmente ao centro */
     }
     
-    /* Estilização para a imagem do logo do Google */
-    #logo-do-google {
-        cursor: auto; /* Definir o cursor como padrão */
-        width: 350px; /* Largura da imagem */
-        padding: 20px; /* Adicionar espaço interno à imagem */
+    /* Estilos para a classe "box" que envolve um bloco de conteúdo */
+    .box {
+        display: flex; /* Exibe os elementos filhos em um layout flex */
+        flex-direction: column; /* Organiza os elementos filhos em coluna */
+        align-items: center; /* Alinha os elementos horizontalmente ao centro */
+        text-align: center; /* Alinha o texto ao centro */
+        width: 95vw; /* Largura igual a 95% da largura da janela de visualização */
+        height: 95vh; /* Altura igual a 95% da altura da janela de visualização */
+        background: #fafafa; /* Cor de fundo */
+        padding: 20px; /* Espaçamento interno */
+        border-radius: 10px; /* Borda arredondada */
     }
     
-    /* Estilização para elementos do tipo input e input em foco */
-    input,
-    input:focus {
-        color: grey; /* Cor do texto */
-        font-size: medium; /* Tamanho da fonte */
-        width: 582px; /* Largura do input */
-        height: 46px; /* Altura do input */
-        border-radius: 100px; /* Arredondamento das bordas */
-        border: solid 1px; /* Borda sólida de 1px */
-        justify-content: center; /* Centralizar horizontalmente */
-        align-items: center; /* Centralizar verticalmente */
-        display: flex; /* Exibir elementos em um flex container */
+    /* Remove a marcação de lista padrão, margens e preenchimentos */
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
     }
     
-    /* Estilização para botões */
-    button {
-        cursor: pointer; /* Definir o cursor como ponteiro */
-        width: 150px; /* Largura do botão */
-        height: 40px; /* Altura do botão */
-        border-radius: 3px; /* Arredondamento das bordas */
-        background-color: whitesmoke; /* Cor de fundo */
-        color: grey; /* Cor do texto */
-        border: 0; /* Remover borda */
+    /* Estilos para rótulos de entrada de dados */
+    label {
+        padding-right: 15px; /* Espaçamento à direita */
+        width: 250px; /* Largura fixa */
+        display: inline-block; /* Exibe o elemento como bloco, mas permite que outros elementos fiquem ao lado */
+        text-align: right; /* Alinha o texto à direita */
     }
     
-    /* Estilização para rótulos no rodapé */
-    footer label {
-        padding: 10px; /* Adicionar espaçamento interno */
+    /* Estilos para itens de lista */
+    li {
+        margin-bottom: 15px; /* Margem inferior */
+        display: flex; /* Exibe os elementos filhos em um layout flex */
+        align-items: center; /* Alinha os elementos verticalmente ao centro */
     }
     
-    /* Estilização para rótulos no cabeçalho */
-    header label {
-        padding-left: 10px; /* Adicionar espaçamento interno à esquerda */
-        padding-right: 10px; /* Adicionar espaçamento interno à direita */
-        padding-top: 0px; /* Remover espaçamento interno superior */
+    /* Estilos para campos de entrada de texto */
+    .input-text {
+        width: 300px; /* Largura fixa */
+        height: 32px; /* Altura fixa */
+        font-size: 15px; /* Tamanho da fonte */
+        border: 1px solid #838383; /* Borda */
+        padding: 5px; /* Espaçamento interno */
     }
     
-    /* Estilização para cabeçalho e rodapé */
-    header,
-    footer {
-        position: absolute; /* Posição absoluta */
-        width: 100%; /* Largura ocupando 100% da largura do pai */
-        height: 7vh; /* Altura de 7% da viewport */
-        color: grey; /* Cor do texto */
+    /* Estilos para menus suspensos */
+    select {
+        width: 130px; /* Largura fixa */
+        height: 32px; /* Altura fixa */
+        background-color: #f0f0f0; /* Cor de fundo */
+        font-size: 15px; /* Tamanho da fonte */
+        font-weight: bold; /* Peso da fonte */
+        border: 1px solid #838383; /* Borda */
     }
     
-    /* Estilização para o rodapé */
-    footer {
-        background: whitesmoke; /* Cor de fundo */
-        bottom: 0; /* Fixar no rodapé */
-        display: inline-block; /* Exibir como bloco inline */
-        flex-direction: row; /* Organizar itens em uma linha */
-        align-items: center; /* Centralizar verticalmente */
+    /* Estilos para elementos div */
+    div {
+        display: inline-block; /* Exibe o elemento como bloco, mas permite que outros elementos fiquem ao lado */
+        flex-direction: column; /* Organiza os elementos filhos em coluna */
+        align-items: start; /* Alinha os elementos horizontalmente à esquerda */
+        gap: 5px; /* Espaçamento entre elementos filhos */
+        text-align: left; /* Alinha o texto à esquerda */
     }
     
-    /* Estilização para o cabeçalho */
-    header {
-        height: 5vh; /* Altura de 5% da viewport */
-    }
-    
-    /* Estilização para links */
-    a {
-        text-decoration: none; /* Remover decoração de texto */
-        color: grey; /* Cor do texto */
-    }
-    
-    /* Estilização para links ao passar o mouse por cima */
-    a:hover {
-        text-decoration: underline; /* Sublinhar o texto ao passar o mouse */
-    }
-    
-    /* Estilização para botões ao passar o mouse por cima */
-    button:hover {
-        border-color: grey; /* Mudar a cor da borda ao passar o mouse */
-        border: solid 1px; /* Borda sólida de 1px */
-    }
-    
-    /* Estilização para input ao passar o mouse por cima ou em foco */
-    input:hover,
-    input:focus {
-        background-color: whitesmoke; /* Mudar a cor de fundo ao passar o mouse ou em foco */
-    }
-    
-    /* Estilização para elementos com a classe 'center' */
-    .center {
-        display: flex; /* Exibir elementos em um flex container */
-        justify-content: space-between; /* Distribuir espaço entre os elementos */
-        align-items: center; /* Centralizar verticalmente */
-    }
     </style>
-    </html>
+    
+</html>
