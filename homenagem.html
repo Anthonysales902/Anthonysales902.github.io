@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martin Luther King</title>
+</head>
+<body>
+    <section class="conteiner">
+        <!-- section colocar todos os elementos e conseguir centralizar tudo com uma class de conteiner que significa que todos os elementos vao ficar dentro dele-->
+        <section>
+            <!-- section para colocar o cabecario -->
+            <header>
+                <!-- header é o cabecario, tudo que for colocado aqui dentro ficará na parte de cima da tela -->
+            <h1>Martin Luther King</h1>
+                <!-- h1 para um titulo com o nome do Martin -->
+            <p>O homem que buscou pela igualdade, justiça e direitos civis para todos os seres humanos, independentemente da cor da pele.</p>    
+                <!-- p para colocar um paragrafo com uma pequena descricao sobre ele-->
+        </header>
+        <!-- fechando o cabecario -->
+    </section>
+    <!-- fechando a section -->
+    <section>
+        <!-- abrindo outra section para a imagem e a descricao da imagem -->
+        <figure>
+            <!-- figure é para criar uma imagem como uma descricao -->
+            <img src="https://static.todamateria.com.br/upload/ma/rt/martinlutherking-cke.jpg" alt="Martin Luther King Imagem">
+            <!-- imagem do martin -->
+            <figcaption>Martin Luther King Jr.: Uma Inspiração Admirável na Luta pela Igualdade e Justiça</figcaption>
+            <!-- figcaption para colocar uma descricao na foto do martin -->
+        </figure>
+        <!-- fechando a figure/imagem -->
+    </section>
+    <!-- fechando a section da imagem -->
+    <section>
+        <!-- abrindo uma section para o texto -->
+        <p>
+            <!-- p para colocar um paragrafo -->
+            Martin Luther King Jr. é universalmente reconhecido como uma das figuras mais admiráveis da história moderna, devido à sua incansável busca pela igualdade, justiça e direitos 
+            civis para todos os seres humanos, independentemente da cor da pele. Sua liderança carismática, ideais nobres e comprometimento inabalável para com a não violência deixaram um 
+            legado duradouro que continua a inspirar e motivar as gerações atuais e futuras.
+        </p>
+    </section>
+    <!-- fechando a section do texto -->
+</section>
+<!-- fechando a section que abriga todos os elementos do site -->
+</body>
+<style>
+    body{
+        background-color: #121212;
+        /* mudar a cor de fundo do body/site inteiro */
+        color: white;
+        /* mudar a cor de todos os textos do site para branco */
+    }
+    .conteiner{
+        width: 100vw;
+        /* fazer esse conteiner ter a mesma largura do site */
+        height: 100vh;
+        /* fazer esse conteiner ter a mesma altura do site */
+        display: flex;
+        /* deixar todas as divs uma ao lado da outra */
+        flex-direction: column;
+        /* deixar as divs uma em baixo da outra */
+        align-items: center;
+        /* alinhar todos os intens no centro */
+    }
+    header{
+        text-align: center;
+        /* alinhar os itens do cabecario no centro */
+    }
+    figcaption{
+        text-align: left;
+        /* alinhar o descricao da foto a esquerda da section que ela esta dentro */
+    }
+    img{
+        width: 100%
+        /* deixar a foto com 100% do largura da div, deixando ela responsiva */
+    }
+    section{
+        width: 60%;
+        /* fazer as sections todas terem 60% da largura do monitor, tornando resposivo */
+    }
+</style>
+</html>
