@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Apresentação</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="conteudo">
+        <div class="cabecalho">
+            <h1 class="titulo-grande">Saudações!</h1>
+            <h1 class="sobre-mim">
+                Sou Anthony, estudante de programação no IFAL
+            </h1>
+            <h3 class="titulo-grande">Residindo em Maceió, AL</h3>
+            <div>
+                <a href="https://github.com/SeuNomeDeUsuário" target="_blank"><mark>GitHub</mark></a>
+                <a href="https://codepen.io/SeuNomeDeUsuário" target="_blank"><mark>CodePen</mark></a>
+                <a href="https://twitter.com/SeuNomeDeUsuário" target="_blank"><mark>Twitter</mark></a>
+                <a href="mailto:seuemail@example.com" target="_blank"><mark>Email</mark></a>
+                <hr>
+            </div>
+        </div>
+        <div class="conteudo-principal">
+            <h2>Habilidades</h2>
+            <div class="alinhar-texto">
+                <div class="experiencia">
+                    <h3 class="titulo-grande"><strong>Desenvolvimento Web</strong> <br>
+                    Avançado</h3>
+                </div>
+                <p>Tenho experiência sólida em desenvolvimento web utilizando HTML e CSS para criar interfaces atraentes e responsivas. Além disso, possuo habilidades em JavaScript para adicionar interatividade e dinamismo às páginas.</p>
+            </div>
+            <div class="alinhar-texto">
+                <div class="experiencia">
+                    <h3 class="titulo-grande"><strong>Design UI/UX</strong> <br>
+                    Avançado</h3>
+                </div>
+                <p>Com proficiência em ferramentas como Figma, sou capaz de criar designs de interface de usuário atraentes e funcionais. Minhas habilidades de design complementam meu conhecimento em desenvolvimento web, garantindo uma abordagem holística aos projetos.</p>
+            </div>
+            <div class="alinhar-texto">
+                <div class="experiencia">
+                    <h3 class="titulo-grande"><strong>Edição Gráfica</strong> <br>
+                    Avançado</h3>
+                </div>
+                <p>Utilizo ferramentas como Adobe Photoshop para manipulação e aprimoramento de imagens. Isso me permite criar elementos visuais que complementam a estética das minhas criações web e de design.</p>
+            </div>
+            <h2>Formação</h2>
+            <div class="alinhar-texto">
+                <div class="experiencia">
+                    <h3 class="titulo-grande"><strong>Instituto de Tecnologia</strong> <br>
+                    2022-2025</h3>
+                </div>
+                <p>
+                    Estou cursando no Instituto de Tecnologia, onde busco aprimorar minhas habilidades em desenvolvimento web e design. A instituição oferece um ambiente propício para aprofundar conhecimentos e explorar novas tecnologias.</p>
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+    }
+    .conteudo {
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+        grid-template-rows: 1fr 2fr;
+        grid-template-columns: 100%;
+    }
+    .sobre-mim {
+        width: 35%;
+        font-size: 18px;
+    }
+    .conteudo-principal {
+        margin: 10px 30px 0 30px;
+    }
+    mark {
+        background-color: pink;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        text-align: center;
+        text-decoration: underline;
+    }
+    .alinhar-texto {
+        display: inline-flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .experiencia {
+        width: 12%;
+    }
+    p {
+        width: 85%;
+    }
+    .titulo-grande {
+        font-weight: 200;
+    }
+    a, a:link, a:visited, a:hover {
+        color: black;
+        padding: 0 16px 0 0;
+        text-decoration: underline;
+    }
+    @media (max-width: 1000px) {
+        .experiencia {
+            width: 15%;
+        }
+    }
+    @media (max-width: 760px) {
+        .experiencia {
+            width: 18%;
+        }
+        .sobre-mim {
+            width: 100%;
+            font-size: 18px;
+        }
+    }
+    @media (max-width: 580px) {
+        .experiencia {
+            width: 22%;
+        }
+    }
+    @media (max-width: 420px) {
+        .experiencia {
+            width: 25%;
+        }
+    }
+    @media (max-width: 320px) {
+        .experiencia {
+            width: 30%;
+        }
+    }
+</style>
+</html>
